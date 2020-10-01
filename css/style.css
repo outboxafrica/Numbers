@@ -316,6 +316,11 @@ nav{
 }
 
 /* body */
+/* footer */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
 
 .container{
     width: 80%;
@@ -330,21 +335,29 @@ nav{
      margin-left:160px;
 margin-top: 5%;margin-bottom:5%;
 }
-.description{
-    display:flex;
-    align-items: center;
-    height: 88%;
-    margin: 0px 30px;
-
+footer{
+    /* position: fixed; */
+    bottom: 0px;
+    width: 100%;
+    background:#4CAF50;
 }
-.text{
+.main-content{
+    display: flex;
+}
+.main-content .box{
     flex-basis: 50%;
-}
-p{
-    font-size: 20px;
-    line-height: 25px;
-}
+    padding: 10px 20px;
 
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0;
+    position: relative;
+}
 button{
     font-weight: bolder;
     border-radius: 5px;
@@ -376,26 +389,136 @@ button{
     background-size: cover;
     transition: transform 0.5s;
 
+    
+}
+.box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    
+    
 
 }
-.card:hover{
-    transform: translateY(-10px);
+.box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    top: -10px;
+    background: white;
 }
-.card1{
-    background-image: url(../images/Javascript.jpg);
+.left .content p{
+    text-align: justify;
+}
+.left .content .social{
+    margin: 20px 0 0;
+
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+.left .content .social a span:hover{
+    background: chocolate;
+}
+.center .content .fas{
+    font-size: 1.4375rem;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+
 }
 
-.card2{
-    background-image: url(../images/Alchemist.jpg);
+.center .content .fas:hover{
+    background: chocolate;
+
+}
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+
+}
+.center .content .phone{
+    margin: 10px 0;
+}
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    
+}
+.right form .msg{
+    margin-top: 10px;
+
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    padding-left: 10px;
+    background-origin: 1px solid;
+
+}
+.right form input:focus
+ .right form textarea:focus{
+     outline-color: chocolate;
+ }
+
+.right form input{
+    height: 35px;
+}
+.right form .btn{
+    margin-top: 10px;
+
+}
+.right form .btn button{
+    height: 30px;
+    width: 14%;
+    border: none;
+    outline: none;
+    background: white;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.right form .btn button:hover
+{
+    background: white;
+
+}
+.bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: white;
+
+}
+@media screen and (max-width:900px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
 }
 
-.card3{
-    background-image: url(../images/HomeGoing.jpg);
-}
-
-.card4{
-    background-image: url(../images/Outliers.jpg);
-}
 
 
 /* footer */
