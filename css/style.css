@@ -607,103 +607,56 @@ background: white;
 }
 
 /* Category Section */
-.categories{
-    margin-top: 70px;
-}
 .cards{
+    height: 292px;
     width: 200px;
-    height: 278px;
-    display: inline-block;
-    border-radius: 10px;
     box-sizing: border-box;
-    cursor:pointer;
-    margin: 10px 15px;
-    padding: 15px 25px;
-    background-position: center;
-    background-size: cover;
+    background:white;
+    border-radius: 10px;
+    border: black solid;
     transition: transform 0.5s;
-    justify-content: center;
-    margin-left: 35px;
+    box-shadow: 3px 2px 9px black;
+    
+}
+.category1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 110px;
+}
+.cards img{
+    height: 237px;
+    width: 194px;
+
+}
+ .cards p{
+
+    line-height: 15px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 .cards:hover{
     transform: translateY(-10px);
 }
+.category2
+{display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
 
-.categories h2{
-    color: #4CAF50;
-    margin-left: 20px;
-    text-decoration: underline;
 }
-/* fantasy */
-.card-a{
-    background-image: url(../images/1984.jpg)
-}
+.category3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
 
-.card-b{
-    background-image: url(../images/Twilight.jpg)
 }
 
-.card-c{
-    background-image: url(../images/Harry\ Potter.jpg);
-}
+.category4{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
 
-.card-d{
-    background-image: url(../images/The\ LOTR.jpg)
-}
-.card-e{
-    background-image: url(../images/dark.jpg)
-}
-/* classic */
-.card-f{
-    background-image: url(../images/Jane\ Eyre.jpg)
-}
-.card-g{
-    background-image: url(../images/Pride\ and\ Prejudice.jpg)
-}
-.card-h{
-    background-image: url(../images/to\ kill\ a\ mocking\ bird.jpg)
-}
-.card-i{
-    background-image: url(../images/Crime\ and\ punishement.jpg)
-}
-.card-j{
-    background-image: url(../images/little\ women.jpg)
-}
-
-/* self-help */
-.card-k{
-    background-image: url(../images/the\ subtle\ art.jpg)
-}
-.card-l{
-    background-image: url(../images/how\ to\ win\ friends.jpg)
-}
-
-.card-m{
-    background-image: url(../images/7\ habits.png)
-}
-
-.card-n{
-    background-image: url(../images/WhoMovedMyCheeseCover.jpg)
-}
-.card-o{
-    background-image: url(../images/Alchemist.jpg)
-}
-
-/* educational */
-
-.card-p{
-    background-image: url(../images/Javascript.jpg)
-}
-.card-q{
-    background-image: url(../images/empower.jpg)
-}
-
-.card-r{
-    background-image: url(../images/Culturize.jpg)
-}
-
-.card-s{
-    background-image: url(../images/Tech.jpg)
 }
 .card-t{
     background-image: url(../images/survive.jpg)
