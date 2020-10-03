@@ -316,6 +316,88 @@ nav{
 }
 
 /* body */
+.container{
+    width: 80%;
+    height: 90vh;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+margin-left: 69px;
+margin-top: 30px;
+}
+.description{
+    display:flex;
+    align-items: center;
+    height: 88%;
+    margin: 0px 30px;
+
+}
+.text{
+    flex-basis: 50%;
+}
+p{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+button{
+    font-weight: bolder;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: black;
+    padding: 12px;
+    font-family: inherit;
+    margin: 9px 0px;
+
+
+}
+.text h1 p{
+    margin: 0px 11px;
+}
+
+
+
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor:pointer;
+    margin: 10px 15px;
+    padding: 15px 25px;
+    
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    
+    
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card1{
+    background-image: url(../images/Javascript.jpg);
+}
+
+.card2{
+    background-image: url(../images/Alchemist.jpg);
+}
+
+.card3{
+    background-image: url(../images/HomeGoing.jpg);
+}
+
+.card4{
+    background-image: url(../images/Outliers.jpg);
+}
+
+
+
 /* footer */
 *{
     margin: 0;
@@ -422,9 +504,10 @@ button{
     line-height: 40px;
     text-align: center;
     font-size: 18px;
-    border-radius: 5px;
+    border-radius: 50%;
     transition: 0.3s;
-
+color: black;
+background: white;
 }
 .left .content .social a span:hover{
     background: chocolate;
@@ -468,6 +551,8 @@ button{
     font-size: 1.0625rem;
     padding-left: 10px;
     background-origin: 1px solid;
+    border-radius: 9px;
+    box-shadow: 2px 2px 2px black
 
 }
 .right form input:focus
@@ -483,8 +568,8 @@ button{
 
 }
 .right form .btn button{
-    height: 30px;
-    width: 14%;
+    height: 40px;
+    width: 100%;
     border: none;
     outline: none;
     background: white;
@@ -492,6 +577,7 @@ button{
     font-weight: 500;
     cursor: pointer;
     transition: 0.3s;
+    box-shadow: 2px 2px 2px black
 
 }
 .right form .btn button:hover
@@ -499,6 +585,7 @@ button{
     background: white;
 
 }
+
 .bottom center{
     padding: 5px;
     font-size: 0.9375rem;
@@ -519,7 +606,108 @@ button{
     }
 }
 
+/* Category Section */
+.categories{
+    margin-top: 70px;
+}
+.cards{
+    width: 200px;
+    height: 278px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor:pointer;
+    margin: 10px 15px;
+    padding: 15px 25px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    justify-content: center;
+    margin-left: 35px;
+}
+.cards:hover{
+    transform: translateY(-10px);
+}
 
+.categories h2{
+    color: #4CAF50;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+/* fantasy */
+.card-a{
+    background-image: url(../images/1984.jpg)
+}
+
+.card-b{
+    background-image: url(../images/Twilight.jpg)
+}
+
+.card-c{
+    background-image: url(../images/Harry\ Potter.jpg);
+}
+
+.card-d{
+    background-image: url(../images/The\ LOTR.jpg)
+}
+.card-e{
+    background-image: url(../images/dark.jpg)
+}
+/* classic */
+.card-f{
+    background-image: url(../images/Jane\ Eyre.jpg)
+}
+.card-g{
+    background-image: url(../images/Pride\ and\ Prejudice.jpg)
+}
+.card-h{
+    background-image: url(../images/to\ kill\ a\ mocking\ bird.jpg)
+}
+.card-i{
+    background-image: url(../images/Crime\ and\ punishement.jpg)
+}
+.card-j{
+    background-image: url(../images/little\ women.jpg)
+}
+
+/* self-help */
+.card-k{
+    background-image: url(../images/the\ subtle\ art.jpg)
+}
+.card-l{
+    background-image: url(../images/how\ to\ win\ friends.jpg)
+}
+
+.card-m{
+    background-image: url(../images/7\ habits.png)
+}
+
+.card-n{
+    background-image: url(../images/WhoMovedMyCheeseCover.jpg)
+}
+.card-o{
+    background-image: url(../images/Alchemist.jpg)
+}
+
+/* educational */
+
+.card-p{
+    background-image: url(../images/Javascript.jpg)
+}
+.card-q{
+    background-image: url(../images/empower.jpg)
+}
+
+.card-r{
+    background-image: url(../images/Culturize.jpg)
+}
+
+.card-s{
+    background-image: url(../images/Tech.jpg)
+}
+.card-t{
+    background-image: url(../images/survive.jpg)
+}
 
 /* footer */
 *{
