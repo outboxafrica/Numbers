@@ -165,6 +165,38 @@ background: white;
     }
 }
 
+/* Category Section */
+.categories{
+    margin-top: 70px;
+}
+.cards{
+    width: 200px;
+    height: 278px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor:pointer;
+    margin: 10px 15px;
+    padding: 15px 25px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    justify-content: center;
+    margin-left: 35px;
+}
+.cards:hover{
+    transform: translateY(-10px);
+}
+
+.categories h2{
+    color: #4CAF50;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+/* fantasy */
+.card-a{
+    background-image: url(../images/1984.jpg)
+}
 
 .search-box{
     position: absolute;
