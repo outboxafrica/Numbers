@@ -1,16 +1,20 @@
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;}
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400&family=Sansita+Swashed:wght@300;400&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400&family=Sansita+Swashed:wght@300;400&display=swap');
+
 html {
     height: 100%;
   }
 
-  body {
+body {
     height: 100%;
     margin: 0;
     font-family: 'Cormorant Upright', serif !important;
     display: grid;
-
-
   }
 
 
@@ -516,9 +520,57 @@ background: white;
 .right form input{
     height: 35px;
 }
+.nav-area li{
+    display: inline-block;
+    top: -17px;
+}
+.nav-area li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 14px;
+
+}
+.nav-area li a:hover{
+    background: white;
+    color: #333;
+
+}
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+
+    
+}
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    background-color: black transparent;
+    top: 4px;
+   
+}
+
+nav ul ul li a{
+    line-height: 50px;
+    background-color: black;
+    border: white solid 1px;
+    
+
+}
 .right form .btn{
     margin-top: 10px;
-
+}
+nav  ul li:hover>ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    
 }
 .right form .btn button{
     height: 40px;
@@ -559,6 +611,14 @@ background: white;
     }
 }
 
+.logo{
+    width: 10px;
+    float: left;
+    height: auto;
+    line-height: 26px;
+    color: white;
+    
+}
 /* Category Section */
 .cards{
     height: 292px;
@@ -966,5 +1026,5 @@ p.file {
     left: 66px;
 }
 
-
+/* footer */
 
