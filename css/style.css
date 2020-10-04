@@ -200,7 +200,7 @@ background: white;
 }
  .cards p{
 
-    line-height: 15px;
+    line-height: 5px;
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
@@ -275,3 +275,6 @@ background: white;
     color: #4CAF50;
     left: 66px;
 }
+
+
+
