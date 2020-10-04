@@ -336,64 +336,64 @@ margin-top: 30px;
     margin: 0px 30px;
 
 }
-.text{
-    flex-basis: 50%;
-}
-p{
-    font-size: 20px;
-    line-height: 25px;
-}
-
-button{
-    font-weight: bolder;
-    border-radius: 5px;
-    background: #4CAF50;
-    color: black;
-    padding: 12px;
-    font-family: inherit;
-    margin: 9px 0px;
-
-
-}
-.text h1 p{
-    margin: 0px 11px;
-}
-
-
-
-.card{
-    width: 200px;
-    height: 230px;
+.nav-area li{
     display: inline-block;
-    border-radius: 10px;
-    box-sizing: border-box;
-    cursor:pointer;
-    margin: 10px 15px;
-    padding: 15px 25px;
-    
-    background-position: center;
-    background-size: cover;
-    transition: transform 0.5s;
-    
+    top: -17px;
+}
+.nav-area li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 14px;
+
+}
+.nav-area li a:hover{
+    background: white;
+    color: #333;
+
+}
+nav ul ul{
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+
     
 }
-.card:hover{
-    transform: translateY(-10px);
-}
-.card1{
-    background-image: url(../images/Javascript.jpg);
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    background-color: black transparent;
+    top: 4px;
+   
 }
 
-.card2{
-    background-image: url(../images/Alchemist.jpg);
+nav ul ul li a{
+    line-height: 50px;
+    background-color: black;
+    border: white solid 1px;
+    
+
 }
 
-.card3{
-    background-image: url(../images/HomeGoing.jpg);
+nav  ul li:hover>ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    
 }
 
-.card4{
-    background-image: url(../images/Outliers.jpg);
+.logo{
+    width: 10px;
+    float: left;
+    height: auto;
+    line-height: 26px;
+    color: white;
+    
 }
 
 
@@ -1517,5 +1517,5 @@ p.file {
     left: 66px;
 }
 
-
+/* footer */
 
