@@ -619,6 +619,233 @@ nav  ul li:hover>ul{
     color: white;
     
 }
+nav{
+    background-color:#000000ab;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    
+    z-index: 1;
+}
+
+.search-box{
+    position: absolute;
+    top: 22%;
+    right: 40%;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    background: #000000ab;
+    border: white solid 1px;
+}
+
+.search-btn{
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    
+    
+}
+
+/* footer */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+footer{
+    
+    bottom: 0px;
+    width: 100%;
+    background:#4CAF50;
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0;
+    position: relative;
+
+    
+}
+.box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    
+    
+
+}
+.box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    top: -10px;
+    background: white;
+}
+.left .content p{
+    text-align: justify;
+}
+.left .content .social{
+    margin: 20px 0 0;
+
+}
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: 0.3s;
+color: black;
+background: white;
+}
+.left .content .social a span:hover{
+    background: chocolate;
+}
+.center .content .fas{
+    font-size: 1.4375rem;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.center .content .fas:hover{
+    background: chocolate;
+
+}
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+
+}
+.center .content .phone{
+    margin: 10px 0;
+}
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    
+}
+.right form .msg{
+    margin-top: 10px;
+
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    padding-left: 10px;
+    background-origin: 1px solid;
+    border-radius: 9px;
+    box-shadow: 2px 2px 2px black
+
+}
+.right form input:focus
+ .right form textarea:focus{
+     outline-color: chocolate;
+ }
+
+.right form input{
+    height: 35px;
+}
+.right form .btn{
+    margin-top: 10px;
+
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: white;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 2px 2px 2px black
+
+}
+.right form .btn button:hover
+{
+    background: white;
+
+}
+.category4{
+    margin-bottom: 20px;
+}
+
+.bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: white;
+
+}
+@media screen and (max-width:900px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color:white;
+    font-weight: 15px;
+    transition: 0.4s;
+    line-height: 3px;
+    width:0;
+    font-size: 18px;
+}
+.search-box:hover> .search-text{
+    width: 240px;
+    padding: 0 6px;
+
+}
+.search-box:hover> .search-btn{
+    background: white;
+    
+    
+}
+
 /* Category Section */
 .cards{
     height: 292px;
@@ -654,7 +881,7 @@ nav  ul li:hover>ul{
 }
  .cards p{
 
-    line-height: 5px;
+    line-height: 15px;
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
@@ -1026,5 +1253,5 @@ p.file {
     left: 66px;
 }
 
-/* footer */
+
 
