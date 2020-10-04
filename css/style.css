@@ -630,7 +630,7 @@ background: white;
 }
  .cards p{
 
-    line-height: 5px;
+    line-height: 15px;
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
@@ -1517,5 +1517,5 @@ p.file {
     left: 66px;
 }
 
-/* footer */
+
 
