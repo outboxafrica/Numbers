@@ -6,52 +6,59 @@
       name="viewport"
       content="width=
     , initial-scale=1.0"
-    />
-    <title>Document</title>
+    /><script src="https://kit.fontawesome.com/238f419554.js" crossorigin="anonymous"></script>
+    <title>Numbers LIBRARY</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
-      integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" 
+    integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" 
+    crossorigin="anonymous">
+   
   </head>
   <body>
     <header>
       <a name="home"></a>
   <div class="wrapper">
-      <nav>
- <div class="logo"><strong>NUMBERS LIBRARY</strong></div>
+      <nav id ="nav-bar">
+<div class="logo">
+  <img src="../images/logo.png"/>
+</div>
  <ul class="nav-area">
-   <!-- box -->
-   <div class="search-box">
-     <input class="search-text" type="text" name="" 
-     placeholder="Looking for a book?">
-     <a class="search-btn>" href="../html/category.html">
-       <i class="fas fa-search" style="color: white;"></i>
-
-
-     </a>
-   </div>
-   <!-- box -->
+   
 <li><a href="#home">HOME</a></li>
-<li><a href="#about">ABOUT</a></li>
-<li><a href="#">ADMIN</a></li>
-<li><a href="../html/category.html">CATEGORIES</a>
-<ul><li><a href="#educational">EDUCATIONAL</a></li>
-  <li><a href="#fantasy">FANTASY</a></li>
-  <li><a href="#classic">CLASSIC</a></li>
-  <li><a href="#self-help">SELF-HELP</a></li>
-</ul>
-</li>
+<div class="dropdown">
+  <li><a href="../html/category.html">CATEGORIES<i class="fa fa-angle-down" style="margin-left:10px;" aria-hidden="true"></i></a>
+  
+  <div class="dropdown-content">
+  <a href="#">EDUCATIONAL</a>
+  <a href="#">FANTASY</a>
+  <a href="#">CLASSIC</a><a href="#">SELF HELP</a>
+  </div>
+</div>
+
+ 
+<div class="wrap">
+  <div class="search">
+    <input class="search" onkeyup="search_category()" type="text"
+    name="search" placeholder="Search book categories..">  <ul id='list'> 
+      <li class="category">EDUCATIONAL</li> 
+      <li class="category">FANTASY</li> 
+      <li class="category">CLASSIC</li> 
+   
+     
+  </ul> 
+  </div>
+  </div>
+</li><li><a href="#about">ABOUT</a></li>
+<li><a href="/Numbers/html/adminlogin.html">ADMIN PORTAL</a></li>
 <li><a href="#contact">CONTACT</a></li>
- </ul>
+ </ul> 
 </div>
 </nav>
 
 <div class="welcome-text">
-  <h1>"books are a uniquely portable magic"</h1>
-  <a href="#contact">contact us</a>
+  <h2 style="font-size: 70px;color:white;line-height:0.9;text-align:center;margin-top:-20px;">"books are a uniquely portable magic"</h2>
+  <p style="color:white; margin-top:50px"> Want to know more about us? keep scrolling</p>
+      <i style="font-size: 40px; right: 180px; color:white;" class="fas">&#xf103;</i>
 </div>
 
 </header>
@@ -60,111 +67,97 @@
 <div class="container">
   <div class="description">
     <div class="text">
-      <h1>About Us</h1>
-      <p>
+      <h1 style="margin-top:50px;margin-left:190px;font-size:54px ;">ABOUT US</h1>
+      <p style ="margin-top:10px;">
         At Numbers Library, we strongly uphold the reading culture. Numbers-Book Library is
         a platform where students who like reading pick different books from a range of topics.
         Access to this library is only available to EDU students, EDU LF's
         and a EDU staff members. Get started by  presenting your library ID and signing up.
         Users have up to 3 days to return books borrowed.
-      </p>
-     <a href="../html/category.html"> 
-      <button type="button">THIS WAY TO THE BOOK STORE </button></a>
+      </p><br> <br><br><p style="color: #4CAF50;margin-top: 90px;"><i><b>Checkout the variety of books we have </b></i> </p>
+     <a href="../html/category.html">  <i class='fas fa-chevron-circle-right' style='font-size:48px;color:#4CAF50;margin-left: 400px;margin-top:0;'></i></a>
+     
     </div>
 
     <div class="text">
         <div class="card card1">   
-
-
-
-
-
-
- 
-    <!-- footer -->
-     <footer>
-      <div class="main-content">
-        <div class="left box">
-          <h2>NUMBERS LIBRARY</h2>
-          <div class="content">
-            <p>
-              We have several books of all categories waiting to be opened by
-              you!
-            </p>
-            <div class="social">
-              <a href="#"><span class="fab fa-facebook-f"></span></a>
-              <a href="#"><span class="fab fa-twitter"></span></a>
-              <a href="#"><span class="fab fa-instagram"></span></a>
-            </div>
-          </div>
         </div>
 
         <div class="card card2">   
         </div>
 
- 
-    <!-- footer -->
-     <footer>
-      <div class="main-content">
-        <div class="left box">
-          <h2>NUMBERS LIBRARY</h2>
-          <div class="content">
-            <p>
-              We have several books of all categories waiting to be opened by
-              you!
-            </p>
-            <div class="social">
-              <a href="#"><span class="fab fa-facebook-f"></span></a>
-              <a href="#"><span class="fab fa-twitter"></span></a>
-              <a href="#"><span class="fab fa-instagram"></span></a>
-            </div>
-          </div>
-        </div>
-        <div class="center box">
-          <h2>Address</h2>
-          <div class="content">
-            <div class="place">
-              <span class="fas fa-map-marker-alt"></span>
-              <span class="text">Lumumba Avenue</span>
-            </div>
-            <div class="phone">
-              <span class="fas fa-phone-square-alt"></span>
-              <span class="text">+256772807929</span>
-            </div>
-
-            <div class="email">
-              <span class="fas fa-envelope-square"></span>
-              <span class="text">numberslibrary@gmail.com</span>
-            </div>
-          </div>
+        <div class="card card3">     
         </div>
 
-        <div class="right box">
-          <h2>Contact Us</h2>
-          <div class="content">
-            <form action="#">
-              <div class="email">
-                <div class="text">Email</div>
-                <input type="email" required />
-              </div>
-              <div class="msg">
-                <div class="text">Message *</div>
-                <textarea rows="2" cols="25" required></textarea>
-              </div>
-              <div class="btn">
-                <button type="submit">Send</button>
-              </div>
-            </form>
-          </div>
+        <div class="card card4"> 
+        </div>
+
+
+    </div>
+  </div>
+</div>
+<a name="contact"></a>
+<!-- footer -->
+<footer>
+  <div class="main-content">
+    <div class="left box">
+      <h2>NUMBERS LIBRARY</h2>
+      <div class="content">
+        <p>
+          We have several books of all categories waiting to be opened by
+          you!
+        </p>
+        <div class="social">
+          <a href="#"><span class="fab fa-facebook-f"></span></a>
+          <a href="#"><span class="fab fa-twitter"></span></a>
+          <a href="#"><span class="fab fa-instagram"></span></a>
         </div>
       </div>
-      <div class="bottom">
-        <center>
-          <span class="credit">Numbers Library</span>
-          <span class="far fa-copyright"></span>
-          <span>2020 All Rights Reserved.</span>
-        </center>
+    </div>
+    <div class="center box">
+      <h2>Address</h2>
+      <div class="content">
+        <div class="place">
+          <span class="fas fa-map-marker-alt"></span>
+          <span class="text">Lumumba Avenue</span>
+        </div>
+        <div class="phone">
+          <span class="fas fa-phone-square-alt"></span>
+          <span class="text">+256772807929</span>
+        </div>
+
+        <div class="email">
+          <span class="fas fa-envelope-square"></span>
+          <span class="text">numberslibrary@gmail.com</span>
+        </div>
       </div>
-    </footer> -->
+    </div>
+
+    <div class="right box">
+      <h2>Contact Us</h2>
+      <div class="content">
+       
+        <form action="#">
+          <div class="email">
+            <div class="text">Email</div>
+            <input type="email" required />
+          </div>
+        
+        </form>  <p style ="margin-top:20px;color:white; font-size:18px"><i>Subscribe to our news letter</i> </p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <center>
+      <span class="credit">Numbers Library</span>
+      <span class="far fa-copyright"></span>
+      <span>2020 All Rights Reserved.</span>
+    </center>
+  </div>
+</footer>
+   
+<script src="./index.js"></script> 
+
+
   </body>
 </html>
