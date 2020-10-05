@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400&family=Sansita+Swashed:wght@300;400&display=swap');
 html {
     height: 100%;
@@ -12,10 +13,12 @@ html {
 
   }
 
+
   #main-holder {
     width: 100%;
     height: 100%;
     display: grid;
+
     justify-items: center;margin-top:10%;
     align-items: center;
     background-color: white;
@@ -29,6 +32,7 @@ html {
     display: grid;
     justify-items: center;margin-bottom:70px;
     align-items: center;
+
   }
   #login-error-msg {
     width: 23%;
@@ -43,9 +47,11 @@ html {
     opacity: 0;
   }
 
+
   #error-msg-second-line {
     display: block;
   }
+
 
   #login-form {
     align-self: flex-start;
@@ -54,9 +60,11 @@ html {
     align-items: center;margin-top:-150px;
   }
 
+
   .login-form-field::placeholder {
     color: #3a3a3a;
   }
+
 
   .login-form-field {
     border: none;
@@ -98,6 +106,7 @@ html {
     float: left;
     padding-top: 8px;
   }p.page-paragraph {margin-top:60px;font-weight:700;}
+
 *{
     margin: 0;
     padding: 0;
@@ -892,3 +901,4 @@ p.file {
   top: 0;
   opacity:0;
 }
+
