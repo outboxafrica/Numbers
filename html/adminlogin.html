@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin login</title>
+    <link rel="stylesheet" href="/Numbers/css/style.css" />
+    <script defer src="/Numbers/js/adminLogin.js"></script>
+  </head>
+  <body>
+    <main id="main-holder">
+      <h1 id="login-header">WELCOME TO THE ADMIN LOGIN PAGE</h1>
+
+      <div id="login-error-msg-holder">
+        <p id="login-error-msg">
+          Invalid ID
+          <span id="error-msg-second-line">and/or password</span>
+        </p>
+      </div>
+
+      
+      <form id="login-form"action="add.html" method="GET">
+        <label for="uname" style="margin-left: -400px"><b>username </b></label>
+        <input
+          type="text"
+          placeholder="Enter username"
+          name="username"
+          id="username-field"
+          class="login-form-field"
+          required
+        />
+
+        <label for="psw" style="margin-left: -400px"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          id="password-field"
+          class="login-form-field"
+          required
+        />
+
+        <button type="submit" value="Login" id="login-form-submit">
+          Login
+        </button>
+        <p class="page-paragraph"><i>Note:Only Library admins can access this page and the next page</i></p>
+      </form>
+    </main>
+  </body>
+</html>
