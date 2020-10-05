@@ -1110,19 +1110,6 @@ background: white;
     
 }
 
-/* Category Section */
-.cards{
-    height: 292px;
-    width: 200px;
-    box-sizing: border-box;
-    background:white;
-    border-radius: 10px;
-    border: black solid;
-    transition: transform 0.5s;
-    box-shadow: 3px 2px 9px black;
-    
-}
-
 .search-box{
     position: absolute;
     top: 22%;
@@ -1132,38 +1119,6 @@ background: white;
     padding: 10px;
     background: #000000ab;
     border: white solid 1px;
-}
-.category1{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 110px;
-}
-.cards img{
-    height: 237px;
-    width: 194px;
-
-}
- .cards p{
-
-    line-height: 15px;
-    text-align: center;
-    font-weight: bolder;
-    text-transform: uppercase;
-    font-size: 13px;
-}
-.cards:hover{
-    transform: translateY(-10px);
-}
-.category2
-{display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
-
-}
-.category3{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px;
 }
 
 .search-btn{
@@ -1496,7 +1451,17 @@ p.file {
   top: 0;
   opacity:0;
 }
+.category2
+{display: flex;
+    justify-content: space-evenly;
+    margin-top: 140px;
 
+}
+.category3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 140px;
+}
 
 /* new */
 
@@ -1505,17 +1470,36 @@ p.file {
 .category4{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin-top: 140px;
 
 }
 .category-container h2{
     position: relative;
-    top: 74px;
+    top: 93px;
     text-transform: uppercase;
     text-decoration: underline;
     color: #4CAF50;
-    left: 66px;
+    text-align: center;
 }
 
+
+
+
+.category-container{
+    width: 92vw;
+    height: 292vh;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    margin-left: 57px;
+    margin-bottom: 43px;
+    margin-top: 147px;
+    /* display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+margin-left: 69px;
+margin-top: 30px; */
+}
 
 
