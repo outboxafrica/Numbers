@@ -117,7 +117,34 @@ html {
     margin: 0;
 
 }
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+     url(../images/background.jpg);
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
 
+}#nav-bar{width:100%;height:19vh;  align-items: center;
+    justify-content: center; display:flex;}
+ .nav-area{
+    float: right;
+    list-style: none;margin-left:600px;
+    margin-top:10px;
+
+}
+.nav-area li{
+    display: inline-block;
+    top: -17px;
+}
+.nav-area li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;margin-top:50px;
+    font-size: 18px;transition:1s;
+
+}
 .nav-area li a:hover{
     background: white;
     color: #333;
@@ -273,6 +300,7 @@ background-color: #4CAF50;
 .welcome-text a:hover{
     background: white;
     color: black;
+
 }
 nav{
     background-color:#000000ab;
@@ -364,6 +392,7 @@ button{
 .card4{
     background-image: url(../images/Outliers.jpg);
 }
+
 
 /* footer */
 *{
@@ -884,128 +913,10 @@ p.file {
     box-shadow: 3px 2px 9px black;
     
 }
-.search-box:hover> .search-btn{
-    background: white;
 
 
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  display: grid;
-}
-
-#main-holder {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  background-color: white;
-}
-
-#login-error-msg-holder {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  margin-top: -210px;
-}
-#login-error-msg {
-  width: 23%;
-  text-align: center;
-  margin: 0;
-  padding: 5px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #8a0000;
-  border: 1px solid #8a0000;
-  background-color: rgb(255, 185, 243);
-  opacity: 0;
-}
-
-#error-msg-second-line {
-  display: block;
-}
-
-#login-form {
-  align-self: flex-start;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  margin-top: -150px;
-}
-
-.login-form-field::placeholder {
-  color: #3a3a3a;
-}
-
-.login-form-field {
-  border: none;
-  border-bottom: 1px solid #3a3a3a;
-  margin-bottom: 10px;
-  border-radius: 3px;
-  outline: none;
-  padding: 0px 0px 5px 5px;
-}
-
-#login-form-submit {
-  background-color: #4caf50;
-  color: white;
-  padding: 14px 20px;
-  margin-top: 50px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  justify-content: center;
-}
-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 14px 20px;
-
-  border: none;
-  cursor: pointer;
-  width: 25%;
-  justify-content: center;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  font-family: inherit;
-  font-size: inherit;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
-}
-span.psw {
-  float: left;
-  padding-top: 8px;
-}
-p.page-paragraph {
-  margin-top: 60px;
-  font-weight: 700;
-}
-#Add-book-container {
-    width: 80%;
-    height: 100vh;
-    background: #ffffff;
-    border-radius: 20px;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+.category1{
     display: flex;
-    position: relative;
     justify-content: space-evenly;
     margin-top: 200px;
 }
@@ -1015,157 +926,16 @@ p.page-paragraph {
     border-radius: 10px;
 
 }
- 
+ .cards p{
 
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    line-height: 15px;
     text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-
-  /* Style the back side */
-  .flip-card-back {
-    background-color: #4CAF50;
-    color: white;
-    transform: rotateY(180deg);
-  }
-select {
-  width: 25%;
-  /* appearance: none;
-  -webkit-appearance: none; */
-  padding: 10px;
-  border: 1px solid;
-  background-color: white;
-  display: inline-block;
-  justify-content: left;
-  text-align: left;
-  color: #4caf50;
-  box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
-  margin-left: 190px;
-  margin-top: 10px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 13px;
 }
-#book-form {
-  width: 40%;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-}
-#button1 {
-  appearance: none;
-  -webkit-appearance: none;
-  margin-top: 30px;
-  margin-left: 20px;
-  padding: 10px;
-  border: none;
-  background-color: #4caf50;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 5px;
-  width: 80%;
-  cursor: pointer;
-}
-#button1:hover {
-  background-color: grey;
-  color: black;
-}
-*:focus {
-  outline: none !important;
-}
-input[type="text"] {
-  padding: 10px;
-  border: 0;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-  margin-top: 10px;
-}
-
-textarea {
-  width: 95%;
-  resize: vertical;
-  padding: 15px;
-  border-radius: 15px;
-  border: 0;
-  margin-top: 30px;
-  box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, 0.06);
-  height: 200px;
-}
-
-#book-form label,
-input {
-  /* In order to define widths */
-  display: inline-block;
-  text-align: left;
-}
-
-#book-form label {
-  width: 25%;
-  /* Positions the label text beside the input */
-  text-align: left;
-}
-
-#book-form label + input {
-  width: 50%;
-  /* Large margin-right to force the next element to the new-line
-           and margin-left to create a gutter between the label and input */
-  margin: 10px 20% 0 4%;
-}
-
-p.file {
-  font-size: 14px;margin-top:20px;margin-bottom:0px;
-  margin-left:200px;
-}
-.btn:hover {
-  color: white;
-  background-color: grey;
-}
-
-.upload-btn-wrapper {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-}
-
-.btn {
-  border: 1px solid gray;
-  color: #4caf50;
-  background-color: white;
-  padding: 4px 16px;margin-top:10px;
-  border-radius: 8px;
-  font-size: 16px;width:150px;
-  font-weight: bold;margin-left:200px;cursor:pointer;
-}
-
-.upload-btn-wrapper input[type=file] {
-  font-size: 10px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity:0;
+.cards:hover{
+    transform: translateY(-10px);
 }
 .category2
 {display: flex;
@@ -1178,10 +948,6 @@ p.file {
     justify-content: space-evenly;
     margin-top: 200px;
 }
-
-/* new */
-
-
 
 .category4{
     display: flex;
@@ -1203,13 +969,13 @@ p.file {
 
 .category-container{
     width: 92vw;
-    height: 334vh;
+    height: 335vh;
     background: #ffffff;
     border-radius: 20px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     margin-left: 57px;
     margin-bottom: 43px;
-    margin-top: 226px;
+    margin-top: 0px;
     /* display: flex;
     position: relative;
     justify-content: space-evenly;
