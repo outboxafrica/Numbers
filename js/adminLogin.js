@@ -8,16 +8,18 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
   
     if (username === "LibAdmin" && password === "ADMIN1") {
-        alert("You have successfully logged in.");
-        location.reload();}
+
+        alert("You have successfully logged in."); location.assign("http://127.0.0.1:5500/Numbers/html/add.html");
+       }
       else if (username === "LibAdmin-jr" && password === "ADMIN2") {
             alert("You have successfully logged in.");
-            location.reload();
+            location.assign("http://127.0.0.1:5500/Numbers/html/add.html")
     }
     else if (username === "LibAdmin-sub" && password === "ADMIN3") {
         alert("You have successfully logged in.");
-        location.reload();
-}
+        location.assign("http://127.0.0.1:5500/Numbers/html/add.html")
+
+     
     else {
         loginErrorMsg.style.opacity = 1;
     }

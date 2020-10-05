@@ -4,12 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin login</title>
+
+    <link rel="stylesheet" href="/Numbers/css/style.css" /><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" >
+    <script defer src="/Numbers/js/adminLogin.js"></script>
+    
+  </head>
+  <body> <div class="wrapper">
+    <nav id ="nav-bar">
+<div class="logo">
+<img src="/Numbers/images/logo.png"/>
+</div>
+<ul class="nav-area">
+
+<li><a href="/Numbers/html/index.html">HOME</a></li><div class="dropdown">
+<li><a href="../html/category.html">CATEGORIES</a><i class="fa fa-angle-down" style="margin-left:10px;" aria-hidden="true"></i></a>
+  
+  <div class="dropdown-content">
+  <a href="#">EDUCATIONAL</a>
+  <a href="#">FANTASY</a>
+  <a href="#">CLASSIC</a><a href="#">SELF HELP</a>
+  </div></div>
+</li>
+<ul><li><a href="#educational">EDUCATIONAL</a></li>
+  <li><a href="#fantasy">FANTASY</a></li>
+  <li><a href="#classic">CLASSIC</a></li>
+  <li><a href="#self-help">SELF-HELP</a></li>
+</ul>
+<div class="wrap">
+<div class="search">
+  <input class="search" onkeyup="search_category()" type="text"
+  name="search" placeholder="Search book categories..">  <ul id='list'> 
+    <li class="category">EDUCATIONAL</li> 
+    <li class="category">FANTASY</li> 
+    <li class="category">CLASSIC</li> 
+ 
+   
+</ul> 
+</div>
+</div>
+
+</li><li><a href="/Numbers/html/index.html#about">ABOUT</a></li>
+<li><a href="/Numbers/html/adminlogin.html">ADMIN PORTAL</a></li>
+<li><a href="/Numbers/html/index.html#contact">CONTACT</a></li>
+</ul> 
+</div>
+</nav>
+
+    <main id="main-holder">
+      <h1 style="font-family:Cormorant Upright; margin-top:-300px;color:#4CAF50">WELCOME TO THE ADMIN LOGIN PAGE</h1>
+
     <link rel="stylesheet" href="/Numbers/css/style.css" />
     <script defer src="/Numbers/js/adminLogin.js"></script>
   </head>
   <body>
     <main id="main-holder">
-      <h1 id="login-header">WELCOME TO THE ADMIN LOGIN PAGE</h1>
+
 
       <div id="login-error-msg-holder">
         <p id="login-error-msg">
@@ -20,7 +69,11 @@
 
       
       <form id="login-form"action="add.html" method="GET">
-        <label for="uname" style="margin-left: -400px"><b>username </b></label>
+
+        <label for="uname" style="margin-left: -400px"><b>Username </b></label>
+
+
+
         <input
           type="text"
           placeholder="Enter username"
@@ -43,7 +96,11 @@
         <button type="submit" value="Login" id="login-form-submit">
           Login
         </button>
-        <p class="page-paragraph"><i>Note:Only Library admins can access this page and the next page</i></p>
+
+        <p class="page-paragraph"><i>Note:Only Library admins with the correct login details can access <br>the next page</i></p>
+
+   
+
       </form>
     </main>
   </body>

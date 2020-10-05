@@ -3,9 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add book</title> <link rel="stylesheet" href="/Numbers/css/style.css" />
+   
+<body>
+    <div class="wrapper">
+        <nav id ="nav-bar">
+  <div class="logo">
+    <img src="/Numbers/images/logo.png"/>
+  </div>
+   <ul class="nav-area">
+    
+  <li><a href="/Numbers/html/index.html">HOME</a></li>
+  <div class="dropdown">
+    <li><a href="../html/category.html">CATEGORIES<i class="fa fa-angle-down" style="margin-left:10px;" aria-hidden="true"></i></a>
+    
+    <div class="dropdown-content">
+    <a href="#">EDUCATIONAL</a>
+    <a href="#">FANTASY</a>
+    <a href="#">CLASSIC</a><a href="#">SELF HELP</a>
+    </div>
+  </div>
+  
+   
+  <div class="wrap">
+    <div class="search">
+      <input class="search" onkeyup="search_category()" type="text"
+      name="search" placeholder="Search book categories.."> 
+      
+    </div>
+  </div>
+  
+  </li><li><a href="/Numbers/html/index.html#about">ABOUT</a></li>
+  <li><a href="#">ADMIN PORTAL</a></li>
+  <li><a href="/Numbers/html/home.html#contact">CONTACT</a></li>
+   </ul> 
+  </div>
+  </nav>x
+   
+    <div id ="Add-book-container">
+     
+        <p class="welcome" style="margin-left: 150px;margin-top:300px;font-size: 30px;color:#4caf50 ;">HI ADMIN,<br>here you'll be able to<br> add books to the library</p>
+   
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="/Numbers/images/pic 1.jpg " alt="Avatar" style="width:300px;height:300px; ">
+              </div>
+              <div class="flip-card-back">
+               <p style="margin-top:60px;">Welcome to Numbers library</p>
+              </div>
+            </div>
+          </div>
+     <form id ="book-form"name="book-form"action="http://127.0.0.1:5500/Numbers/html/adminlogin.html"method="get">
+     <label for="aligned-text">FullNames:</label>
+     <input type="text" placeholder="FullName"namme="FullName" required />
+     <label for="text">Book title:</label>
+     <input type="text" placeholder="Title" required />
+     <label for="text">Author:  </label>
+     <input type="text" placeholder="Author" required  />
+     <label for="text">DateAdded:</label>
+     <input type="text" placeholder="DateAdded" required />
+   
+  
+ 
+  <textarea placeholder="briefly Describe what the book is about.."></textarea>
+    
+  <select name="Category" required >
+    <option value="technology">Category</option>
+ <option value="fantasy">FANTASY</option>
+ <option value="horror">HORROR</option>
+ <option value="other">...</option>
+</select>
+<div class="upload-btn-wrapper">
+  <p   class="file"><i>please Upload book file</i> </p>
+  <div class="btn" >Upload file</div> 
+  <input type="file" name="myfile" />
+
+</div>
+ 
+  <button id="button1"type="submit" >Add Book</bu>
+        </form>
+        
+     </div>
+    </div>
+    <footer>
+    <div class="main-content">
+        <div class="left box">
+          <h2>NUMBERS LIBRARY</h2>
+          <div class="content">
+            <p>
+              We have several books of all categories waiting to be opened by
+              you!
+            </p>
+            <div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Lumumba Avenue</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-square-alt"></span>
+              <span class="text">+256772807929</span>
+            </div>
+    
+            <div class="email">
+              <span class="fas fa-envelope-square"></span>
+              <span class="text">numberslibrary@gmail.com</span>
+            </div>
+          </div>
+        </div>
+    
+        <div class="right box">
+          <h2>Contact Us</h2>
+          <div class="content">
+           
+            <form action="#">
+              <div class="email">
+                <div class="text">Email</div>
+                <input type="email" required />
+              </div>
+            
+            </form>  <p style ="margin-top:20px;color:white; font-size:18px"><i>Subscribe to our news letter</i> </p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Numbers Library</span>
+          <span class="far fa-copyright"></span>
+          <span>2020 All Rights Reserved.</span>
+        </center>
+      </div></footer>
+
     <title>Add book</title>
 </head>
-<body>
-    
-</body>
+
 </html>
