@@ -19,7 +19,7 @@ loginButton.addEventListener("click", (e) => {
         alert("You have successfully logged in.");
         location.assign("http://127.0.0.1:5500/Numbers/html/add.html")
 
-     
+    }
     else {
         loginErrorMsg.style.opacity = 1;
     }
