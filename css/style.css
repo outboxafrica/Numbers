@@ -129,9 +129,10 @@ header{
 }#nav-bar{width:100%;height:19vh;  align-items: center;
     justify-content: center; display:flex;}
  .nav-area{
-    float: right;
-    list-style: none;margin-left:600px;
-    margin-top:10px;
+  float: right;
+  list-style: none;
+  margin-left: auto;
+  /* margin-top: 10px;*/
 
 }
 .nav-area li{
@@ -988,8 +989,66 @@ p.file {
 margin-left: 69px;
 margin-top: 30px; */
 }
-/* new */
 
+/* borrow page*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: none;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  overflow-wrap: anywhere; */
+}
+.row, .column{
+  display: flex;
+}
+.row{
+  flex-direction: row;
+}
+.column{
+  flex-direction: column;
+}
+.form-wrap-out {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 24vh; /* Margin to place below the top navbar */
+  margin-bottom: 5vh; /* Adding space below */
+  background: #e1e3e6;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+.form-wrap-in{
+  padding-right: 20%;
+}
+.form-wrap-in > .row{
+  margin-bottom: 10px;
+}
+.form-wrap-in label, p.note{
+  font-size: 18px;
+  width: 40%;
+  padding: 10px;
+  font-weight: 500;
+}
+p.note{
+  width: 60%;
+}
+
+/* This selects input fields that are not radio buttons or checkboxes */
+input:not([type="checkbox"]):not([type="radio"]) {  
+  border: none;
+  height: 40px;
+  border-radius: 4px !important;
+  box-shadow: 0 0 3px 1px rgb(0 0 0 / 0.2) !important;
+}
+
+/* This selects input fields that are not radio buttons or checkboxes when in the focused state */
+input:not([type="checkbox"]):not([type="radio"]):focus {
+  box-shadow: 0 0 3px 3px rgb(22 165 198 / 20%) !important;
+}
 
 .numbers-form-header{
     
@@ -1047,4 +1106,26 @@ float: right;
 }
 .one{
   text-align:center;
+}
+.column.form-wrap-in .row input{
+  width: 60%;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 2px 10px;
+
+}
+button#borrow{
+  background:theme;
+  color: rgb(86, 9, 173);
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+  width: 35%;
+  max-width: 100px;
+  font-weight: 500;
+}
+button#borrow:hover{
+  background: rgb(146, 154, 163);
 }
