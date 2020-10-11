@@ -1,45 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borrow Page</title>
-    <link rel="stylesheet" a href="../css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Borrow Book</title>
 </head>
+
 <body>
-    <form id=Numbers-borrow-page>
-<div class=" navbar-header">
-   <ul> <li><h1>HOME</h1></li>
-    <!--LOGO GOES HERE-->
-    <li><h2>CATEGORIES</h2></li>
-<li><h2 id="boom"><a href="../html/admin.html" style="text-decoration: none;"> ADMIN PORTAL</a></h2></li>
-<li><form class ="srch"action= a href=../html/category.html>
-<input type="text"placeholder="Search"name="search">
-<button type="submit"><i class="fa-fa search"></i></button>
-</form></li></ul>
 
-</div>
-<div class="body">
-    <fieldset><h3>Name of Book :</h3></fieldset>
-    <input autofocus class="numbers-form-field-input-brw" name ="text" type="text"id="text" placeholder="Add Text">
-    <fieldset><h3>Author :</h3></fieldset>
-    <input autofocus class="numbers-form-field-input-brw" name ="text" type="text"id="text" placeholder="Add Text">
-    <fieldset><h3>UserName:</h3></fieldset>
-    <input autofocus class="numbers-form-field-input-brw" name ="text" type="text"id="text" placeholder="Add Text">
-    <fieldset><h3>Date Borrowed :</h3></fieldset>
-    <input autofocus class="numbers-form-field-input-brw" name ="date" type="date"id="date" placeholder="Add Date">
-    <fieldset><h3>Return Date :</h3></fieldset>
-    <input autofocus class="numbers-form-field-input-brw" name ="date" type="date"id="date" placeholder="Add Date">
-    <fieldset><h3>Telephone :</h3></fieldset>
-    <input autofocus class="numbers-form-field-input-brw" name ="number" type="number"id="number" placeholder="Add Number">
-    <fieldset><h3>Note : Please return book in 3days</h3></fieldset>
-    <button type="submit"><h3>BORROW</h3></button>
-</div>
-<div class=navbar-footer>
-    <h3>Find us at...</h3>
-</div>
+	
+	<div class="wrapper">
+		<nav id="nav-bar">
+			<div class="logo">
+				<img src="../images/logo.png" />
+			</div>
+			<ul class="nav-area">
 
-    </form>
-    
+				<li><a href="#home">HOME</a></li>
+				<div class="dropdown">
+					<li><a href="../html/category.html">CATEGORIES<i class="fa fa-angle-down" style="margin-left:10px;"
+								aria-hidden="true"></i></a>
+
+						<div class="dropdown-content">
+							<a href="#">EDUCATIONAL</a>
+							<a href="#">FANTASY</a>
+							<a href="#">CLASSIC</a><a href="#">SELF HELP</a>
+						</div>
+				</div>
+
+
+				<div class="wrap">
+					<div class="search">
+						<input class="search" onkeyup="search_category()" type="text" name="search"
+							placeholder="Search book categories..">
+						<ul id='list'>
+							<li class="category">EDUCATIONAL</li>
+							<li class="category">FANTASY</li>
+							<li class="category">CLASSIC</li>
+
+
+						</ul>
+					</div>
+				</div>
+				</li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="/Numbers/html/adminlogin.html">ADMIN PORTAL</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+		
+		<!-- Changes The for form-->
+		<div class="form-wrap-out">
+			<form action="" method="">
+					<div class="column form-wrap-in">
+							<div class="row">
+									<label for="bookName">Name of Book:</label>
+									<input type="text" id="bookName" placeholder="Add text">
+							</div>
+
+							<div class="row">
+									<label for="author">Author:</label>
+									<input type="text" id="author" placeholder="Add text">
+							</div>
+
+							<div class="row">
+									<label for="uname">Username:</label>
+									<input type="text" id="uname" placeholder="Add text">
+							</div>
+
+							<div class="row">
+									<label for="borrowDate">Date Borrowed:</label>
+									<input type="date" id="borrowDate" placeholder="Add text">
+							</div>
+
+							<div class="row">
+									<label for="returnDate">Return Date:</label>
+									<input type="date" id="returnDate" placeholder="Add text">
+							</div>
+
+							<div class="row">
+									<label for="tel">Telephone:</label>
+									<input type="text" id="tel" placeholder="Add text">
+							</div>
+					</div>
+
+					<div class="row">
+							<p class="note">Note: Please return book in 3 days</p>
+							<button type="submit" name="borrow" id="borrow">Borrow</button>
+					</div>
+			</form>
+		</div>
+		<!-- Changes The for form-->
+	</div>
+
+	
+	<!-- footer -->
+	<footer>
+		<div class="main-content">
+			<div class="left box">
+				<h2>NUMBERS LIBRARY</h2>
+				<div class="content">
+					<p>
+						We have several books of all categories waiting to be opened by
+						you!
+					</p>
+					<div class="social">
+						<a href="#"><span class="fab fa-facebook-f"></span></a>
+						<a href="#"><span class="fab fa-twitter"></span></a>
+						<a href="#"><span class="fab fa-instagram"></span></a>
+					</div>
+				</div>
+			</div>
+			<div class="center box">
+				<h2>Address</h2>
+				<div class="content">
+					<div class="place">
+						<span class="fas fa-map-marker-alt"></span>
+						<span class="text">Lumumba Avenue</span>
+					</div>
+					<div class="phone">
+						<span class="fas fa-phone-square-alt"></span>
+						<span class="text">+256772807929</span>
+					</div>
+
+					<div class="email">
+						<span class="fas fa-envelope-square"></span>
+						<span class="text">numberslibrary@gmail.com</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="right box">
+				<h2>Contact Us</h2>
+				<div class="content">
+
+					<form action="#">
+						<div class="email">
+							<div class="text">Email</div>
+							<input type="email" required />
+						</div>
+
+					</form>
+					<p style="margin-top:20px;color:white; font-size:18px"><i>Subscribe to our news letter</i> </p>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<center>
+				<span class="credit">Numbers Library</span>
+				<span class="far fa-copyright"></span>
+				<span>2020 All Rights Reserved.</span>
+			</center>
+		</div>
+	</footer>
 </body>
+
 </html>
