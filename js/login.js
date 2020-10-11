@@ -28,7 +28,7 @@ function validate(e) {
 
     if (valid) {
         alert("Login was sucessfully processed.  You will be redirected to the members page now.");
-        location.assign("/index.html");
+        location.assign("/Numbers/index.html");
     }
     else {
         var t = " tries";
