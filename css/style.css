@@ -819,7 +819,7 @@ select {
 #button1 {
   appearance: none;
   -webkit-appearance: none;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 20px;
   padding: 10px;
   border: none;
