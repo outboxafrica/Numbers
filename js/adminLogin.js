@@ -9,15 +9,15 @@ loginButton.addEventListener("click", (e) => {
 
     if (username === "LibAdmin" && password === "ADMIN1") {
 
-        alert("You have successfully logged in."); location.assign("/html/add.html");
+        alert("You have successfully logged in."); location.assign("/Numbers/html/add.html");
     }
     else if (username === "LibAdmin-jr" && password === "ADMIN2") {
         alert("You have successfully logged in.");
-        location.assign("/html/add.html")
+        location.assign("/Numbers/html/add.html")
     }
     else if (username === "LibAdmin-sub" && password === "ADMIN3") {
         alert("You have successfully logged in.");
-        location.assign("/html/add.html")
+        location.assign("/Numbers/html/add.html")
 
     }
     else {
