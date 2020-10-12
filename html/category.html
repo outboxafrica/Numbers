@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Categories</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
-    integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q"
-    crossorigin="anonymous"
-  />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" >
+
 </head>
 <body>
 
@@ -21,60 +18,119 @@
   <img src="../images/logo.png"/>
   </div>
   <ul class="nav-area">
-   
+
   <li><a href="../html/index.html">HOME</a></li>
   <div class="dropdown">
   <li><a href="../html/category.html">CATEGORIES<i class="fa fa-angle-down" style="margin-left:10px;" aria-hidden="true"></i></a>
-  
+
   <div class="dropdown-content">
   <a href="#educational">EDUCATIONAL</a>
   <a href="#fantasy">FANTASY</a>
   <a href="#classic">CLASSIC</a><a href="#self-help">SELF HELP</a>
   </div>
   </div>
-  
-  
-  <div class="wrap">
-  <div class="search">
-    <input class="search" onkeyup="search_category()" type="text"
-    name="search" placeholder="Search book categories..">  <ul id='list'> 
-      <li class="category">EDUCATIONAL</li> 
-      <li class="category">FANTASY</li> 
-      <li class="category">CLASSIC</li> 
-   
-     
-  </ul> 
-  </div>
-  </div>
+
+
+
   </li><li><a href="#about">ABOUT</a></li>
   <li><a href="../html/adminlogin.html">ADMIN PORTAL</a></li>
   <li><a href="#contact">CONTACT</a></li>
-  </ul> 
+  </ul>  <div class="wrap">
+    <div class="search">
+      <input class="search" onkeyup="search_category()" type="text"
+      name="search" placeholder="Search book categories..">  
+    </div>
+    </div>
   </div>
   </nav>
-  
-  
+
+
+    <input data-function="swipe" id="swipe" type="checkbox"><p style="color:black;font-size:18px;margin-top:190px;margin-left:90px;">expand to see all available books </p>
+    <!-- <label data-function="swipe" for="swipe">&#xf057;</label> -->
+    <label data-function="swipe" for="swipe">&#xf0c9;</label>
+   
+
+
+    <div class="sidebar">
+      <nav class="menu"><h4 style="margin-top: 30px;font-size:22px;color:white;margin-left:10px;">Available books<i class="fa fa-angle-down" style="margin-left:50px;" aria-hidden="true"></i></h4>
+        <li><a style="margin-top: 10px;margin-bottom:10px;" href="#category1">Educational</a></li>
+        <p>JAVASCRIPT</p>
+        <p>EMPOWER</p>
+        <p>CULTURIZE</p>
+        <p>TECH WITH HEART</p>
+        <p>SURVIVE</p>
+        
+
+
+
+        <li><a style="margin-top: 10px;margin-bottom:10px;" href="#category2">fantasy</a></li>
+        <p>1984</p>
+        <p>TWILIGHT</p>
+        <p>THOTR</p>
+        <p>HARRY POTTER</p>
+        <p>DARK TOWER</p>
+
+
+
+        
+       
+        <li><a style="margin-top: 10px;margin-bottom:10px;" href="#category3">classic</a></li>
+        <p>JANE EYRE</p>
+        <p>PRIDE & PREJUDICE</p>
+        <p>TO KILL A MOCKING BIRD</p>
+        <p>CRIME AND PUNISHEMENT</p>
+        <p>LITTE WOMEN</p>
+        <li><a style="margin-top: 10px;margin-bottom:10px;"href="#category4">Self-help</a></li>
+        <p>THE SUBTLE ART OF..</p>
+        <p>TWILIGHT</p>
+        <p>WHO MOVED MY CHEESE.</p>
+        <p>7 HABITS OF HIGHLY..</p>
+        <p>THE ALCHEMIST</p>
+        
+
+          <div class="dropdown">
+            <li><a  href="../html/category.html">Borrowed books<i class="fa fa-angle-down" style="margin-left:10px;" aria-hidden="true"></i></a>
+          
+            <div class="dropdown-content">
+            <a href="#educational">EDUCATIONAL</a>
+            <a href="#fantasy">FANTASY</a>
+            <a href="#classic">CLASSIC</a><a href="#self-help">SELF HELP</a>
+            </div>
+            </div><br>
+            <br>
+            <br>
+            <div class="dropdown">
+              <li><a  href="../html/category.html">Recently Added<i class="fa fa-angle-down" style="margin-left:10px;" aria-hidden="true"></i></a>
+                <div class="dropdown-content" >
+              <p id="first"></p>
+            
+             
+              </div>
+              </div>
+    </div>
+    
+
     <div class="category-container">
         <a name="educational"></a>
         <!-- Educational -->
-        
+
         <h2>EDUCATIONAL</h2>
-        <div class="category1">
+        <div id="category1">
             <div class="cards">
                <a href="#"> <img src="../images/Javascript.jpg" alt="Javascript"></a>
                 <p>Javascript</p><p>O'Reilly</p>
             </div>
-    
+
             <div class="cards">
                 <a href="#"> <img src="../images/empower.jpg" alt="empower"></a>
                 <p>Empower</p><p>John Spencer</p>
             </div>
-    
+
             <div class="cards">
                 <a href="#"> <img src="../images/Culturize.jpg" alt="Culturize"></a>
                 <p>Culturize</p><p>Jimmy Casas</p>
             </div>
-    
+
             <div class="cards">
                 <a href="#"><img src="../images/Tech.jpg" alt="Tech"></a>
                 <p>Tech With Heart</p><p>Stacey Roshan</p>
@@ -83,33 +139,33 @@
                 <a href="#"> <img src="../images/survive.jpg" alt="survive"></a>
                 <p>Survive</p><p>Bettina love</p>
             </div>
-    
+
         </div>
         <a name="fantasy"></a>
         <h2>FANTASY</h2>
-        
+
         <!-- fantasy -->
-        <div class="category2">
+        <div id="category2">
             <div class="cards">
                 <a href="#"> <img src="../images/1984.jpg" alt="1984"></a>
                 <p>1984</p><p>George Orwell</p>
             </div>
-    
+
             <div class="cards">
                 <a href="#"> <img src="../images/Twilight.jpg" alt="Twilight"></a>
                 <p>Twilight</p><p>Stephenie Meyer</p>
             </div>
-    
+
             <div class="cards">
                 <a href="#"><img src="../images/The LOTR.jpg" alt='LOTR'></a>
                 <p>THOTR</p><p>TOLKIEN</p>
             </div>
-    
+
             <div class="cards">
                 <a href="#"><img src="../images/Harry Potter.jpg" alt="harry potter"></a>
                 <p>HARRY POTTER</p><p>J.K.ROWLING</p>
             </div>
-    
+
             <div class="cards">
                 <a href="#"> <img src="../images/dark.jpg" alt="dark"></a>
                 <p>DARK TOWER</p><p>STEPHEN KING</p>
@@ -117,66 +173,68 @@
         </div>
         <a name="classic"></a>
         <!-- CLASSIC -->
-       
+
         <h2>CLASSIC</h2>
-        <div class="category3">
-    
+        <div id="category3">
+
             <div class="cards">
                 <a href="#"> <img src="../images/Jane Eyre.jpg" alt="7 habits"></a>
                 <p>JANE EYRE</p><p>CHARLOTTE BRONTE</p>
             </div>
-    
+
             <div class="cards">
                 <a href="#"> <img src="../images/Pride and Prejudice.jpg" alt="7 Pride"></a>
                 <p>PRIDE & Prejudice</p><p>JANE AUSTEN</p>
             </div>
-    
+
             <div class="cards">
                 <a href="#">  <img src="../images/to kill a mocking bird.jpg" alt="TKAMB"></a>
                 <p>TO KILL A MOCKING BIRD</p><p>HARPER LEE</p>
             </div>
-    
+
             <div class="cards">
                 <a href="#"> <img src="../images/Crime and punishement.jpg" alt="Crime"></a>
                 <p>CRIME AND PUNISHEMENT</p><p>FYODOR DOSTOYEVSKY</p>
-            </div> 
+            </div>
             <div class="cards">
                 <a href="#"> <img src="../images/little women.jpg" alt="littlewomen"></a>
                 <p>litte women</p><p>louisa may alcott</p>
-            </div> 
+            </div>
         </div>
-    
+
         <!-- SELF-HELP -->
         <a name="self-help"></a>
         <h2>SELF-HELP</h2>
-    <div class="category4">
+    <div id="category4">
         <div class="cards">
             <a href="#"> <img src="../images/the subtle art.jpg" alt="The subtle art of not giving a fuck"> </a>
             <p>The subtle art of..</p><p>MARK MANSON</p>
         </div>
-    
+
         <div class="cards">
             <a href="#">  <img src="../images/how to win friends.jpg" alt="howtowinfriends"> </a>
             <p>how to win friends..</p><p>dale carnegie</p>
         </div>
-    
+
         <div class="cards">
             <a href="#">  <img src="../images/WhoMovedMyCheeseCover.jpg" alt="7 habits"></a>
             <p>who moved my cheese</p><p>dr. spencer</p>
         </div>
-    
+
         <div class="cards">
             <a href="#">  <img src="../images/7 habits.png" alt="7 habits"></a>
             <p>7 habits of highly..</p><p>steven covey</p>
-        </div> 
-    
+        </div>
+
         <div class="cards">
             <a href="#"> <img src="../images/Alchemist.jpg" alt="Alchemist"></a>
             <p>the alchemist</p><p>paulo coelho</p>
-        </div> 
+        </div>
     </div>
+   <a href="/Numbers/html/index.html"><i class='fas fa-chevron-circle-left' style='font-size:48px;color:#4CAF50;margin-left:300px;margin-top:450px;'><p style="color:black;font-size:40px;font-family:'Cormorant Upright', serif !important;margin-top:30px ;margin-left:50px;">previous page</p></i></a> 
+   <a href="/Numbers/html/adminlogin.html"></a> <i class='fas fa-chevron-circle-right' style='font-size:48px;color:#4CAF50;margin-left:900px;margin-top:450px;'><p style="color:black;font-size:40px;font-family:'Cormorant Upright', serif !important;margin-top:30px ;margin-left: -150px;">next page</p></i></a>
     </div>
-
+    
     <a name="contact"></a>
 <!-- footer -->
 <footer>
@@ -217,13 +275,13 @@
     <div class="right box">
       <h2>Contact Us</h2>
       <div class="content">
-       
+
         <form action="#">
           <div class="email">
             <div class="text">Email</div>
             <input type="email" required />
           </div>
-        
+
         </form>  <p style ="margin-top:20px;color:white; font-size:18px"><i>Subscribe to our news letter</i> </p>
       </div>
     </div>
@@ -237,7 +295,7 @@
   </div>
 </footer>
 
-  <script>
+ <script src="/Numbers/js/add.js" async>
     window.alert("WELCOME, BOOK LOVERS. PLEASE CLICK ON A BOOK IN ORDER TO BORROW");
     </script>
 </body>
