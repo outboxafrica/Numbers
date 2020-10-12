@@ -990,7 +990,7 @@ p.file {
   border-radius: 10px;
 }
 .cards p {
-  line-height: 15px;
+  line-height: 10px;
   text-align: center;
   font-weight: bolder;
   text-transform: uppercase;
@@ -1026,7 +1026,7 @@ p.file {
 
 .category-container {
   width: 92vw;
-  height: 290vh;
+  height: 330vh;
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -1120,7 +1120,7 @@ input[data-function*="swipe"]:checked ~ .sidebar .menu li {
 }
 h1,
 p {
-  margin: 30px 0;
+  /* margin: 10px 0; */
   font-size: 45px;
   font-weight: 280;
 }
