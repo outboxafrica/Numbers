@@ -137,6 +137,48 @@ header {
     justify-items: start;
   }
  .search{ grid-template-columns: 1fr;position:sticky;}
+
+  button:hover {
+    opacity: 0.8;
+  }input[type=username], input[type=password],input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }span.psw {
+    float: left;
+    padding-top: 8px;
+  }p.page-paragraph {margin-top:60px;font-weight:700;}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}label{font-size:30px;}
+.wrapper{
+    width:100%;
+    margin: 0;
+
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+     url(../images/background.jpg);
+    height: 100vh;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}#nav-bar{width:100%;height:19vh;  align-items: center;
+    justify-content: center; display:flex;}
+ .nav-area{
+  float: right;
+  list-style: none;
+  margin-left: auto;
+  /* margin-top: 10px;*/
+
 }
 #nav-bar {
   width: 100%;
@@ -230,6 +272,17 @@ nav ul ul li a nav ul li:hover > ul {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+  .logo1{
+    width: 200px;
+    height: 100%;
+    
+    /* float: center; */
+    /* height: auto; */
+    /* line-height: 26px; */
+   margin-top:-20px;
+   margin:auto;
+  } 
 
 #nav-bar .logo {
   width: 200px;
@@ -691,14 +744,15 @@ button:hover {
   opacity: 0.8;
 }
 input[type="text"],
-input[type="password"] {
+input[type="password"]
+input[type="Username"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   font-family: inherit;
   font-size: inherit;
-  border: 1px solid #ccc;
+  border:1px solid #ccc;
   box-sizing: border-box;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
@@ -811,7 +865,7 @@ select {
 #button1 {
   appearance: none;
   -webkit-appearance: none;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 20px;
   padding: 10px;
   border: none;
@@ -978,7 +1032,6 @@ p.file {
 margin-left: 69px;
 margin-top: 30px; */
 }
-/* new */
 
 input[data-function*="swipe"] {
   position: absolute;
@@ -1071,5 +1124,144 @@ p {
   font-size: 14px;
   margin-top: -20px;
   font-weight: bolder;
-  margin-left: 10px;
+  margin-left: 10px;}
+/* borrow page*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: none;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  overflow-wrap: anywhere; */
+}
+.row, .column{
+  display: flex;
+}
+.row{
+  flex-direction: row;
+}
+.column{
+  flex-direction: column;
+}
+.form-wrap-out {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 24vh; /* Margin to place below the top navbar */
+  margin-bottom: 5vh; /* Adding space below */
+  background: #e1e3e6;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+}
+.form-wrap-in{
+  padding-right: 20%;
+}
+.form-wrap-in > .row{
+  margin-bottom: 10px;
+}
+.form-wrap-in label, p.note{
+  font-size: 18px;
+  width: 40%;
+  padding: 10px;
+  font-weight: 500;
+}
+p.note{
+  width: 60%;
+}
+
+/* This selects input fields that are not radio buttons or checkboxes */
+input:not([type="checkbox"]):not([type="radio"]) {  
+  border: none;
+  height: 40px;
+  border-radius: 4px !important;
+  box-shadow: 0 0 3px 1px rgb(0 0 0 / 0.2) !important;
+}
+
+/* This selects input fields that are not radio buttons or checkboxes when in the focused state */
+input:not([type="checkbox"]):not([type="radio"]):focus {
+  box-shadow: 0 0 3px 3px rgb(22 165 198 / 20%) !important;
+}
+
+.numbers-form-header{
+    
+margin:auto;
+width:50%;
+padding:50px;
+font-family:Arial, Helvetica, sans-serif;
+
+}
+#design{
+    margin:auto;
+    width:50%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.numbers-form-field-input{
+    margin:0;
+    padding:10px 0 10px 0;
+    border-radius: 10px;
+    box-shadow:2px 2px 2px 2px rgba(0,0,0,0.15);
+    width:450px;
+    
+}
+.numbers-form-footer{
+    margin:20px 0 20px 0;
+}
+.numbers-signup-btn{
+    background-color: #4caf50;
+    padding:15px 15px 15px 15px;
+    margin:20px 20px 20px 20px;
+border-radius: 10px;
+
+}
+.numbers-signup-btn:hover{
+    background-color: green;
+    
+
+}
+
+.photos{
+    max-width: 100%;
+    max-height:100%;
+    display: flex;
+    float:right;
+    opacity: 0.8;
+}
+ul{
+list-style: none;
+display:flex;
+float: right;
+}
+.navbar-header{
+    display:flex;
+    margin: right 0 20px 0 20px;
+}
+.one{
+  text-align:center;
+}
+.column.form-wrap-in .row input{
+  width: 60%;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 2px 10px;
+
+}
+button#borrow{
+  background:theme;
+  color: rgb(86, 9, 173);
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+  width: 35%;
+  max-width: 100px;
+  font-weight: 500;
+}
+button#borrow:hover{
+  background: rgb(146, 154, 163);
+}
 }
