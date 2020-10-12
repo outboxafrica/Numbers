@@ -131,13 +131,12 @@ header {
   background-position: center center;
   position: relative;
 }
-@media (min-width: 200px) {
+@media (min-width: 300px) {
   #nav-bar {
     grid-template-columns: 1fr  auto auto;
     justify-items: start;
-  }
- .search{ grid-template-columns: 1fr;position:sticky;}
-
+  }i{justify-items:auto;position:relative;}}
+ 
   button:hover {
     opacity: 0.8;
   }input[type=username], input[type=password],input[type=email] {
@@ -430,6 +429,8 @@ button {
   margin: 0px 11px;
 }
 
+   
+ 
 .card {
   width: 200px;
   height: 230px;
@@ -439,7 +440,7 @@ button {
   cursor: pointer;
   margin: 10px 15px;
   padding: 15px 25px;
-
+ 
   background-position: center;
   background-size: cover;
   transition: transform 0.5s;
@@ -856,16 +857,16 @@ select {
   margin-left: 190px;
   margin-top: 10px;
 }
-#book-form {
+#add-book{
   width: 40%;
   justify-content: center;
   text-align: center;
   margin: auto;
 }
-#button1 {
+#button2 {
   appearance: none;
   -webkit-appearance: none;
-  margin-top: 10px;
+  margin-top:900px;
   margin-left: 20px;
   padding: 10px;
   border: none;
@@ -873,10 +874,10 @@ select {
   color: #fff;
   font-weight: 600;
   border-radius: 5px;
-  width: 80%;
+  width:50px;
   cursor: pointer;
 }
-#button1:hover {
+#button2:hover {
   background-color: grey;
   color: black;
 }
@@ -969,6 +970,13 @@ p.file {
   border-radius: 10px;
   transition: transform 0.5s;
   box-shadow: 3px 2px 9px black;
+  grid-auto-rows: auto;
+ 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px));
+   
+ 
+ 
 }
 
 #category1 {
@@ -1263,5 +1271,77 @@ button#borrow{
 }
 button#borrow:hover{
   background: rgb(146, 154, 163);
+
+}#book-list, #add-book, #tabbed-content{
+  margin: 30px;
 }
+#book-list ul{
+  display:block;
+  padding: 0;margin-right:-500px;margin-top:-250px;
 }
+#book-list li{
+  padding: 20px;
+  border-left: 5px solid #ddd;
+  margin: 20px 10px;
+}
+#book-list li:hover{
+  border-color: #4caf50;
+}
+.delete{
+  float: right;
+  background: #4caf50;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+.delete:hover{
+  background: #333;
+}
+#add-book{
+  width: 400px;
+  margin: 0 auto;
+}
+#add-book input{
+  display: block;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  width: 300px;
+  float: left;
+  clear: both;
+}
+#add-book button{
+  appearance: none;
+  -webkit-appearance: none;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+#add-book:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+#add-book #hide{
+width: 30px;
+}
+#add-book label{
+line-height: 52px;
+
+}.title{float:right;margin-right:-10px;margin-top:-50px;}
+
+
+
+
+

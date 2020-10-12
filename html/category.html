@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Categories</title>
+    
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" >
-
+    <script src="/Numbers/js/category.js" >
+      window.alert("WELCOME, BOOK LOVERS. PLEASE CLICK ON A BOOK IN ORDER TO BORROW");
+      </script>
+      <title>Book Categories</title>
 </head>
 <body>
 
@@ -15,7 +18,7 @@
   <div class="wrapper">
       <nav id ="nav-bar">
   <div class="logo">
-  <img src="../images/logo.png"/>
+  <img src="../images/logo.png"  alt ="logo"/>
   </div>
   <ul class="nav-area">
    
@@ -30,7 +33,7 @@
   </div>
   </div>
 
-
+  
 
   </li><li><a href="#about">ABOUT</a></li>
   <li><a href="../html/login.html">LOGIN</a></li>
@@ -46,59 +49,52 @@
    
 
 
-    <div class="sidebar">
-      <nav class="menu"><h4 style="margin-top: 30px;font-size:22px;color:white;margin-left:10px;">Available books<i class="fa fa-angle-down" style="margin-left:50px;" aria-hidden="true"></i></h4>
+    <div class="sidebar">  
+    
+      <nav class="menu">
+        <input id="searchbar" onkeyup="search_book()" type="text" placeholder="Search books..." />
+    
         <li><a style="margin-top: 10px;margin-bottom:10px;" href="#category1">Educational</a></li>
-        <p>JAVASCRIPT</p>
-        <p>EMPOWER</p>
-        <p>CULTURIZE</p>
-        <p>TECH WITH HEART</p>
-        <p>SURVIVE</p>
+        <li class="book">JAVASCRIPT</li>
+        <li class="book">EMPOWER</li>
+        <li class="book">CULTURIZE</li>
+        <li class="book">TECH WITH HEART</li>
+        <li class="book">SURVIVE</li>
         
 
 
 
         <li><a style="margin-top: 10px;margin-bottom:10px;" href="#category2">fantasy</a></li>
-        <p>1984</p>
-        <p>TWILIGHT</p>
-        <p>THOTR</p>
-        <p>HARRY POTTER</p>
-        <p>DARK TOWER</p>
+        <li class="book">1984</li>
+        <li class="book">TWILIGHT</li>
+        <li class="book">THOTR</li>
+        <li class="book">HARRY POTTER</li>
+        <li class="book">DARK TOWER</li>
 
 
 
         
        
-        <li><a style="margin-top: 10px;margin-bottom:10px;" href="#category3">classic</a></li>
-        <p>JANE EYRE</p>
-        <p>PRIDE & PREJUDICE</p>
-        <p>TO KILL A MOCKING BIRD</p>
-        <p>CRIME AND PUNISHEMENT</p>
-        <p>LITTE WOMEN</p>
+        <li ><a style="margin-top: 10px;margin-bottom:10px;" href="#category3">classic</a></li>
+        <li class="book">JANE EYRE</li>
+        <li class="book">PRIDE & PREJUDICE</li>
+        <li class="book">TO KILL A MOCKING BIRD</li>
+        <li class="book">CRIME AND PUNISHEMENT</li>
+        <li class="book">LITTE WOMEN</li>
         <li><a style="margin-top: 10px;margin-bottom:10px;"href="#category4">Self-help</a></li>
-        <p>THE SUBTLE ART OF..</p>
-        <p>TWILIGHT</p>
-        <p>WHO MOVED MY CHEESE.</p>
-        <p>7 HABITS OF HIGHLY..</p>
-        <p>THE ALCHEMIST</p>
+        <li class="book">THE SUBTLE ART OF..</li>
+        <li class="book">TWILIGHT</li>
+        <li class="book">WHO MOVED MY CHEESE.</li>
+        <li class="book">7 HABITS OF HIGHLY..</li>
+        <li class="book">THE ALCHEMIST</li>
         
 
-          <div class="dropdown">
-            <li><a  href="../html/category.html">Borrowed books<i class="fa fa-angle-down" style="margin-left:10px;" aria-hidden="true"></i></a>
-          
-            <div class="dropdown-content">
-            <a href="#educational">EDUCATIONAL</a>
-            <a href="#fantasy">FANTASY</a>
-            <a href="#classic">CLASSIC</a><a href="#self-help">SELF HELP</a>
-            </div>
-            </div><br>
-            <br>
-            <br>
+       
             <div class="dropdown">
               <li><a  href="../html/category.html">Recently Added<i class="fa fa-angle-down" style="margin-left:10px;" aria-hidden="true"></i></a>
                 <div class="dropdown-content" >
-              <p id="first"></p>
-            
+                                 
+             <ul id="book-list"><li class="book">OPERATING SYSTEMS</li></ul>
              
               </div>
               </div>
@@ -226,8 +222,7 @@
             <p>the alchemist</p><p>paulo coelho</p>
         </div>
     </div>
-   <a href="/Numbers/html/index.html"><i class='fas fa-chevron-circle-left' style='font-size:48px;color:#4CAF50;margin-left:300px;margin-top:450px;'><p style="color:black;font-size:40px;font-family:'Cormorant Upright', serif !important;margin-top:30px ;margin-left:50px;">previous page</p></i></a> 
-   <a href="/Numbers/html/adminlogin.html"></a> <i class='fas fa-chevron-circle-right' style='font-size:48px;color:#4CAF50;margin-left:900px;margin-top:450px;'><p style="color:black;font-size:40px;font-family:'Cormorant Upright', serif !important;margin-top:30px ;margin-left: -150px;">next page</p></i></a>
+   
     </div>
     
     <a name="contact"></a>
@@ -290,8 +285,6 @@
   </div>
 </footer>
 
- <script src="/Numbers/js/add.js" async>
-    window.alert("WELCOME, BOOK LOVERS. PLEASE CLICK ON A BOOK IN ORDER TO BORROW");
-    </script>
+
 </body>
 </html>

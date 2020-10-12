@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" >
-    <title>Add book</title> <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="/Numbers/js/add.js"></script>
+    <title>Add book</title> 
+
 </head>
 
    
@@ -13,7 +16,7 @@
     <div class="wrapper">
         <nav id ="nav-bar">
   <div class="logo">
-    <img src="../images/logo.png"/>
+    <img src="../images/logo.png" alt ="logo"/>
   </div>
    <ul class="nav-area">
     
@@ -29,15 +32,9 @@
   </div>
   
    
-  <div class="wrap">
-    <div class="search">
-      <input class="search" onkeyup="search_category()" type="text"
-      name="search" placeholder="Search book categories.."> 
-      
-    </div>
-  </div>
+ 
   
-  </li><li><a href="/Numbers/html/index.html#about">ABOUT</a></li>
+  </li><li><a href="../html/index.html#about">ABOUT</a></li>
   <li><a href="./login.html">LOGIN</a></li>
   <li><a href="./signUp.html">SIGN-UP</a></li>
    </ul> 
@@ -58,36 +55,18 @@
               </div>
             </div>
           </div>
-     <form id ="book-form"name="book-form"action="category.html#SpanResults">
-     <label for="aligned-text">FullNames:</label>
-     <input type="text" placeholder="FullName"namme="FullName" required />
-     <label for="text">Book title:</label>
-     <input type="text"id="Book-title" placeholder="Title" required />
-     <label for="text">Author:  </label>
-     <input type="text" placeholder="Author" required  />
-     <label for="text">DateAdded:</label>
-     <input type="text" placeholder="DateAdded" required />
-   
-  
- 
-  <textarea placeholder="briefly Describe what the book is about.."></textarea>
-    
-  <select name="Category" required >
-    <option value="technology">Category</option>
- <option value="fantasy">FANTASY</option>
- <option value="horror">EDUCATIONAL</option>
- <option value="horror">SELF-HELP</option>
- <option value="horror">CLASSIC</option>
- <option value="other">...</option>
-</select>
-<!-- <div class="upload-btn-wrapper">
-  <p   class="file"><i>please Upload book file</i> </p>
-  <div class="btn" >Upload file</div> 
-  <input type="file" name="myfile" />
-
-</div> -->
- 
-  <button id="button1" type="submit"   >Add Book</bu>
+         
+          <div id="book-list">
+           
+            <ul>
+              <h2 class="title">view added books here</h2>
+              
+            </ul>
+        </div>
+        <form id="add-book">
+        
+            <input type="text" placeholder="Add a book title..." />
+            <button>Add</button>
         </form>
         
      </div>
@@ -151,6 +130,6 @@
         </center>
       </div></footer>
 
-      <script src="/Numbers/js/add.js" async></script>
+      
     </body>
 </html>
